@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Note</title>
+    <style>
+        *{
+            font-family: sans-serif;
+            /* border: 1px solid red; */
+            box-sizing: border-box;
+
+        }
+        .container{
+            width: 400px;
+            height: 370px;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-image: linear-gradient(to right,#44A3DB,#3E57A7);
+            margin: 0 auto;
+            padding: 50px 30px 30px 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .sn{
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .date{
+            color: white;
+            font-size: 17px;
+        }
+        .heading{
+            font-size: 28px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        ul{
+            margin-left: 10px;
+        }
+        li{
+            font-size: 18px;
+        }
+        button{
+            width: 350px;
+            background-image: linear-gradient(to right,#5FC8CB,#41B960);
+            border: none;
+            border-radius: 5px;
+        }
+        .container:hover{
+            transform: rotate(-45deg);
+            transition: 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Hover to see the effect</h1>
+    <div class="container">
+        <div class="sn">#01</div>
+        <div class="date">Created On : 01/01/2023</div>
+        <div class="heading">Important dates</div>
+        <ul>
+            <li>January 26 - Republic Day</li>
+            <li>August 15 - Independence Day</li>
+            <li>Octobar 2 - Gandhi Jayanti</li>
+            <li>August 29 - National Sports Day</li>
+        </ul>
+        <button>Mark As Done</button>
+    </div>
+</body>
+</html>

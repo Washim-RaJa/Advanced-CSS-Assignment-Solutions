@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Spinner Animation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .loader{
+            width: 75px;
+            height: 75px;
+            border: 5px solid whitesmoke;
+            border-bottom-color: black;
+            border-radius: 50%;
+            position: absolute;
+            left: 47%;
+            top: 40%;
+            animation: spinner 0.8s ease-in-out infinite reverse;
+        }
+        @keyframes spinner{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(-360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="loader"></div>
+</body>
+</html>

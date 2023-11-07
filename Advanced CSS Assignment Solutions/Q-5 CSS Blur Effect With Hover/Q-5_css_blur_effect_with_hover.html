@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Blur Effect With Hover</title>
+    <style>
+        img{
+            width: 1000px;
+            height: 500px;
+            /* width: 50%;
+            height: 300px; */
+            border: 2px solid black;
+            margin: 0 auto;
+            display: block;
+            filter: blur(15px);
+        }
+        img:hover{
+            filter: blur(0);
+            transition: 1s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="font-family: century gothic;text-align: center;"><u>Hover To Reveal The Image.</u></h1>
+    <img src="image/dubai.jpg" alt="dubai"/>
+</body>
+</html>
